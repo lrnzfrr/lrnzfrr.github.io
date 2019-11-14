@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Ferri Lorenzo  </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Sito Personale di Ferri Lorenzo Web Developer" />
+        <meta name="keywords" content="cakephp, php , ferri lorenzo, web developer, linux, personal site" />
+        <link rel="shortcut icon" href="/favicon.ico"> 
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/style_ie.css" />
+		<![endif]-->
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script language="javascript" src="js/popup/modal.popup.js"></script>
+		<!-- jmpress plugin -->
+		<script type="text/javascript" src="js/jmpress.min.js"></script>
+		<!-- jmslideshow plugin : extends the jmpress plugin -->
+		<script type="text/javascript" src="js/jquery.jmslideshow.js"></script>
+		<script type="text/javascript" src="js/modernizr.custom.48780.js"></script>
+		
+		<noscript>
+			<style>
+			.step {
+				width: 100%;
+				position: relative;
+			}
+			.step:not(.active) {
+				opacity: 1;
+				filter: alpha(opacity=99);
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+			}
+			.step:not(.active) a.jms-link{
+				opacity: 1;
+				margin-top: 40px;
+			}
+			</style>
+		</noscript>
+<script language="javascript">
+ 
+  $(document).ready(function() {
+ 
+    //Change these values to style your modal popup
+    var width = 920;
+    var align = "center";
+    var top = 130;
+    var padding = 10;
+    var backgroundColor = "#FFFFFF";
+    var borderColor = "#000000";
+    var borderWeight = 4;
+    var borderRadius = 5;
+    var fadeOutTime = 300;
+    var disableColor = "#666666";
+    var disableOpacity = 40;
+    var loadingImage = "../js/popup/loading.gif";
+ 
+    $("#weapon").click(function() {
+ 
+        modalPopup( align,
+		    top,
+		    width,
+		    padding,
+		    disableColor,
+		    disableOpacity,
+		    backgroundColor,
+		    borderColor,
+		    borderWeight,
+		    borderRadius,
+		    fadeOutTime,
+		    "weapon.html",
+		    loadingImage );
+ 
+    });	
+ 
+    //This method hides the popup when the escape key is pressed
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            closePopup(fadeOutTime);
+        }
+    });
+    
+ 
+    $("#skill").click(function() {
+ 
+        modalPopup( align,
+		    top,
+		    width,
+		    padding,
+		    disableColor,
+		    disableOpacity,
+		    backgroundColor,
+		    borderColor,
+		    borderWeight,
+		    borderRadius,
+		    fadeOutTime,
+		    "skill.html",
+		    loadingImage );
+ 
+    });	
+ 
+    //This method hides the popup when the escape key is pressed
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) {
+            closePopup(fadeOutTime);
+        }
+    });    
+ 
+  });
+ 
+</script>		
+    </head>
+    <body>
+        <div class="container">
+	
+			<div style="height:120px"></div>
+			<section id="jms-slideshow" class="jms-slideshow">
+				<div class="step" data-color="color-1">
+					<div class="jms-content">
+					<img src="smiles/yellow.jpg" /><br>
+						<h3>Welcome!!</h3>
+							
+						<p>Ferri Lorenzo, web developer, linux systemist </p>
+					<!--	<a class="jms-link" href="#">Read more</a> -->
+					</div>
+				
+				</div>
+				<div class="step" data-color="color-2" data-y="500" data-scale="0.4" data-rotate-x="30">
+					<div class="jms-content">
+						<h3>Skills</h3>
+						<p>
+						Html, Css,Ajax,  Php Ninja <br />
+						 jquery, prototype, scripaculous 10 Dan<br />
+						Linux sysemist, SEO  7 Dan<br />
+						Python, Ruby, Object-C  6 Dan<br />
+						
+						</p>
+						<a class="jms-link" id="skill" href="#">Read more</a>
+					</div>
+					<img src="smiles/blu.jpg" />
+				</div>
+				<div class="step" data-color="color-3" data-x="2000" data-z="3000" data-rotate="170">
+					<div class="jms-content">
+						<h3>Weapon of choice</h3>
+						<p>
+						Love MVC pattern<br />
+						Cakephp for rapid and cool web applications<br />
+						Panic Coda, Dreamweaver & Xcode forge my code<br />			
+						</p>
+				<!--		<a class="jms-link" id="weapon" href="#">Read more</a> -->
+					</div> 
+					<img src="smiles/grey.jpg" />
+				</div>
+				<div class="step" data-color="color-4" data-x="3000">
+					<div class="jms-content">
+				
+						<h3>Contact</h3>
+						<p>Sure, you can mail me!</p>
+					<a href="mailto:info@flor.it">info@flor.it</a>
+					
+					</div>
+					<img src="smiles/orange.jpg" />
+					
+				</div>
+				<div class="step" data-color="color-5" data-x="4500" data-z="1000" data-rotate-y="90">
+				<div class="jms-content">
+				
+						<h3>Wanna take a coffee with me?</h3>
+						<p>Find me on Twitter and Facebook, click the mugs!!</p>
+					</div>
+				  	<a href="https://www.facebook.com/lorenzo.ferri" target="_blank" >  <img src="img/latte-social-icon-fb_128.png" border="0" style="margin: 100px 100px 100px 100px"  /></a>
+					 <a href="https://twitter.com/#!/lorenzoshake" target="_blank"> <img src="img/latte-social-icon-twi_128.png"    /></a>
+				</div>
+			</section>
+        </div>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#jms-slideshow' ).jmslideshow();
+				
+			});
+		</script>
+    </body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2165627-1', 'flor.it');
+  ga('send', 'pageview');
+
+</script>
+</html>
